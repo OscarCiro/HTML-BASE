@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+    DOCTYPE: Define el tipo de coumento. En HTML5, se utiliza simplemente <!DOCTYPE html>.
+ -->
+<html lang="es">
+<!--
+
+<html>: Elemento raiz que envuelve todo el contenido de la pagina.
+    lang="es": Agrega el atributo lang para establecer el idioma del documento. En este caso, español.
+-->
+<head>
+    <meta charset="UTF-8">
+    <!--
+    <meta charset="UTF-8">: Define la codificacion de caracteres del documento, UTF-8 es la codificacion estandar.
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">: Agrega un meta-tag que permite a los navegadores ajustar 
+    la escala de la pagina segun el dispositivo.
+    width=device-width: Ajusta la escala para que el ancho de la pagina sea igual al del dispositivo.
+    initial-scale=1.0: Establece el escala inicial de la pagina en 1.0. 
+    -->
+    <title>Ejemplo Basico de HTM5</title>
+    <!--
+    <title>: Define el titulo de la pagina que se muestra en la pestaña del navegador.
+    -->
+</head>
+<body>
+<!--    
+    <body> : Elemento que contiene todo el contenido visible de la pagina web    -->
+    
+    <header>
+        <!--
+        <header>: Representa el encabezado de la pagina o de una seccion. Normalmente incluye el logotipo, nombre del sitio y 
+            enlaces de navegacion. 
+        -->
+        <h1>Mi sitio Web</h1>
+        <!--
+        <h1>: Define un encabezado de primer nivel en HTML5. Este elemento se utiliza para títulos grandes y 
+            es muy común en páginas web.
+        -->
+     </header>
+
+     <nav>
+        <!--
+        <nav>: Elemento que representa un menu de navegacion o botones de acceso rapido.
+        -->
+        <ul>
+            <!--
+            <ul>: Define una lista desordenada en HTML5.
+            -->
+            <li><a href="#inicio">Inicio</a></li>
+            <!--
+            <li>: Define un elemento de lista en HTML5.
+            <a>: Define un enlace (hipervinculo) en HTML5.
+            href="#inicio">: Agrega el enlace a una URL o un recurso externo.
+            Inicio: El texto que se muestra en el enlace.
+            -->
+            <li><a href="#sobre-mi">Sobre mi (Imagen) </a></li>
+            <li><a href="#contacto">Contacto (Audio y Video)</a></li>
+            <li><a href="#iframe">Iframe</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#form">Form</a> </li>
+        </ul>
+     </nav>
+    <section id="inicio">
+        <!--
+        <section>: Define una seccion en HTML5.
+        id="inicio": Agrega un identificador al elemento, que puede ser utilizado para enlazar a este elemento en el código.
+        -->
+        <h2>Inicio</h2>
+        <!--
+        <h2>: Define un encabezado de segundo nivel en HTML5. Este elemento se utiliza para títulos pequeños y 
+            es muy común en páginas web. Generalmente utilizado en secciones
+         -->
+        <p>Bienvenidos a mi pagina de inicio.</p>
+        <!--
+        <p>: Define un párrafo en HTML5. Este elemento se utiliza para mostrar texto o información de contenido. -->
+    </section>
+
+    <section id="sobre-mi">
+       <h2>Sobre Mi</h2>
+        <p>Esta es mi página de sobre mi.</p>
+        <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen">
+        <!-- <img> (Etiqueta de imagen): Se utiliza para insertar imágenes. 
+         Necesita al menos el atributo src para especificar la ubicación de la imagen y alt para una descripción alternativa.
+        -->
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, pongase en contacto conmigo.</p>
+        <audio src="./floating-abstract-142819.mp3" controls autoplay>
+            <!--
+            <audio>: Define un audio en HTML5.
+            src="./floating-abstract-142819.mp3": Agrega la ubicación del audio.
+            controls: Agrega controles de audio para reproducir, pausar, volver al principio, etc.
+            autoplay: Agrega la opción para que el audio se reproduce automáticamente al cargar la página.
+            loop: Agrega la opción para que el audio se reproduzca en bucle infinito.
+            -->
+        </audio>
+         <video src="./32767-394004551_small.mp4" controls muted>
+            <!--
+            <video>: Define un video en HTML5.
+            src="./32767-394004551_small.mp4": Agrega la ubicación del video.
+            controls: Agrega controles de video para reproducir, pausar, volver al principio, etc.
+            muted: Agrega la opción para silenciar el video al cargar la página.
+            autoplay: Agrega la opción para que el video se reproduce automáticamente al cargar la página.
+            loop: Agrega la opción para que el video se reproduzca en bucle infinito.
+            -->
+        </video>
+    </section>
+
+    <section id="iframe">
+        <h2>Iframe</h2>
+        <iframe src="https://view.genially.com/66c07ca5c2879f853a4607bb/interactive-image-multimedia-en-html"
+        width="800" height="600" allowfullscreen></iframe>
+     <!--
+        Atributos comunes de <iframe>
+            Además de src, <iframe> admite varios atributos que te permiten controlar su apariencia y comportamiento.
+            width y height: Controlan el ancho y la altura del iframe. Se pueden definir en píxeles o en porcentaje.
+            frameborder: Define si se debe mostrar o no el borde del iframe. Los valores comunes son 0 (sin borde) y 1 (con borde). 
+            allowfullscreen: Permite que el contenido dentro del iframe se muestre en pantalla completa. Esto es comúnmente utilizado para videos. 
+            name: Asigna un nombre al iframe, lo que puede ser útil para interactuar con él desde otros enlaces o scripts en la página.
+            sandbox: Restringe ciertas acciones dentro del iframe, mejorando la seguridad. Por ejemplo, puede impedir que el contenido ejecute scripts o abra nuevas ventanas.
+            srcdoc: Este atributo permite insertar directamente el contenido HTML dentro del iframe en lugar de cargarlo desde una URL. -->
+       
+    </section>
+
+  <section id="tablas">
+    <h2>Tablas</h2>
+    <table>
+        <!--
+        <table>: Define una tabla en HTML5.
+        -->
+        <tr>
+            <!--
+            <tr>: Define una fila en la tabla.
+            -->
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Celda 1,1</td>
+            <td>Celda 1,2</td>
+            <td>Celda 1,3</td>
+        </tr>
+        <tr>
+            <td>Celda 2,1</td>
+            <td>Celda 2,2</td>
+            <td>Celda 2,3</td>
+        </tr>
+    </table>
+    <!--
+    <table>: Define una tabla en HTML5. -->
+  </section>
+
+
+  <section id="form">   
+    <h2>Formularios</h2>
+    <form action="#" method="post" >
+        <!--
+        <form>: Define un formulario en HTML5.
+        action="#": Agrega la dirección a la que se enviarán los datos del formulario.
+        method="post": Agrega el método de envío de datos al formulario (GET o POST). -->
+   <p>Escribe aquí tu petición <input type="text" name="mensaje"></p>
+   <p><input type="submit" value="Enviar"></p>
+   <!--Aunque un formulario utiliza la etiqueta form como parte central, necesita de otras etiquetas para poder funcionar, 
+   normalmente incluye las etiquetas input y label, y opcionalmente otras más. 
+   Es decir, un formulario es un componente de una página web que está formado por varios elementos, 
+   como campos de texto, casillas de verificación, opciones desplegables, botones y otras etiquetas para darle formato. -->
+    </form>
+    <p>-----------------------------------------------------------------------</p>
+    <!--Tipo Number: Sirve para introducir números Por defecto sólo permite introducir  números enteros 
+    (números sin decimales, positivos y negativos) pero con el atributo step podemos permitir los decimales que queramos por ejemplo  
+    step=0.1 permitimos un decimal, step=0.01 dos decimales. 
+    <p>Cantidad: <input type="number" name="numero" step="0.1"/p>-->
+   
+        <form action="#" method="post" >
+        <p>Nombre Completo <input type="text" name="mensaje" required></p>
+        <p>Edad <input type="number" name="mensaje"min="18" max="65" placeholder="14-99"required></p>
+        <p>Sexo: Hombre<input type="radio" name="sexo" value="h"> Mujer<input type="radio" name="sexo" value="m"> Otro<input type="radio" name="sexo" value="o"></p> 
+        <p>Correo Electrónico <input type="email" name="mensaje"placeholder="nombre@dominio.com" required></p>
+        <p>Contraseña: <input type="password" name="clave" ></p>
+        <p>Elegir memoria USB:<input list="listaUsb"></p>
+        <datalist id="listaUsb" >
+            <option value="8" >
+            <option value="16" >
+            <option value="32" >
+            <option value="64" >
+            </datalist>
+         <p><input type="checkbox" value"acepta" name="condiciones" unchecked="checked"> Acepto condiciones</p>
+        <p><input type="submit" value="Enviar"></p>
+         </form>
+<p>--------------------------------------------------------------------------------------------</p>
+         <form action="#" method="post" >
+            <p>Nombre: <input type="text" required name="nombre" ></p>
+            <p>Apellidos: <input type="text" placeholder="Escribe los dos apellidos" name="ape" size="25" ></p>
+            <p>Localidad: <input type="text" value="Valencia" name="localidad" size="18" minlength="2"></p>
+            <p><input type="submit" value="Enviar"></p>
+            </form>
+  </section>
+    <footer>
+        <!--
+        <footer>: Define el pie de pagina de un documento o seccion. Suele contener informacion como derechos de autor, 
+            enlaces a politicas de privacidad, etc.
+        -->
+        <p>&copy; 2024 Mi sitio Web. Todos los derechos reservados</p>
+        <!--
+        &copy;: Entidad de HTML que representa el simbolo de copyright.
+        -->
+    </footer>
+
+    <main>
+    
+</body>
+</html>

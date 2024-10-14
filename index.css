@@ -3,12 +3,12 @@ h1{
 
 }
 h2{
-    background-color: rgb(163, 201, 98)
+    background-color: #a3c962
 }
 
 .vinculo{
     text-align: center;
-    background-color: rgb(179, 243, 114);
+    background-color: #b3f372;
     color: black;
     display: flex;    
 }

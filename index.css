@@ -1,0 +1,14 @@
+h1{
+    background-color: darkolivegreen    
+
+}
+h2{
+    background-color: rgb(163, 201, 98)
+}
+
+.vinculo{
+    text-align: center;
+    background-color: rgb(179, 243, 114);
+    color: black;
+    display: flex;    
+}
